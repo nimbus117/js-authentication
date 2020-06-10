@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Pasport Example</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -18,8 +18,14 @@
       </ul>
     </nav>
     <header>
-      <h1>Login Using...</h1>
+      <h1>Welcome to your profile, <%=user.username%></h1>
     </header>
-    <main><a class="google-btn" href="/auth/google">Google</a></main>
+    <main>
+      <img src="<%= user.thumbnail %>" alt="Profile thumbnail">
+      <p>
+        Ipsum repudiandae eum corporis maiores praesentium Esse libero molestiae obcaecati cupiditate illo Hic doloribus ad rem debitis impedit reprehenderit quam perferendis Voluptatem iure odit sapiente magni a doloremque Quidem rerum!
+      </p>
+    </main>
   </body>
 </html>
+
