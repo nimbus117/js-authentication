@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pasport Example</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <% if (user) {%>
+          <li><a href="/auth/logout">Logout</a></li>
+        <% } else {%>
+          <li><a href="/auth/login">Login</a></li>
+        <% }%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Passport Example</h1>
+      <h2>Homepage</h2>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </main>
+  </body>
+</html>

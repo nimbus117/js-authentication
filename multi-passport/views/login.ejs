@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <% if (user) {%>
+          <li><a href="/auth/logout">Logout</a></li>
+        <% } else {%>
+          <li><a href="/auth/login">Login</a></li>
+        <% }%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Login Using...</h1>
+    </header>
+    <main><a class="login-btn" href="/auth/google">Google</a></main>
+    <main><a class="login-btn" href="/auth/adfs">ADFS</a></main>
+  </body>
+</html>
